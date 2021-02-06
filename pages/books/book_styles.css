@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: rgb(251, 253, 231);
+	background-color: rgb(255, 254, 234);
 }
 
 
@@ -92,13 +92,14 @@ h1{
 
 @media only screen and (min-width: 768px){
 	.wrapper{
-	width:80%;
+	width:90%;
     margin: 0 auto;
     }
 	
 	.wrapper p{
 		padding-bottom: 1.5vw;
-		padding-right: 1.5vw;
+		padding-right: 0vw;
+		padding-left: 4vw;
 	}
 	
 	
@@ -140,13 +141,13 @@ h1{
 
 	
 	.book-cover{
-		width: 50%;
+		width: 45%;
 		float:left;
 	}
 	
 	.content{
 		float: right;
-		width: 50%;
+		width: 55%;
 		padding: 15px 0px 0px;
 	}
 	
@@ -223,6 +224,14 @@ h1{
 		display: block;
 		width: 300px;
 		margin:auto;
+	}
+	
+	.book-cover{
+		width: 50%;
+	}
+	
+	.content{
+		width: 50%;
 	}
 	
 
