@@ -11,14 +11,21 @@
    </head>
    <body>
       <div id="textcontent"></div>
-	<script type="text/javascript"> 
-	   fetch("firstprog.wasm") .then(bytes => bytes.arrayBuffer()) 
-	   .then(mod => WebAssembly.compile(mod)) .then(module => {
-		  return new WebAssembly.Instance(module) 
-	   }) 
-	   .then(instance => {
-		  console.log(instance);
-	   }); 
-	</script>
+      <script> 
+         fetch("firstprog.wasm")
+         .then(bytes => bytes.arrayBuffer())
+         .then(mod => WebAssembly.compile(mod))
+         .then(module => {return new WebAssembly.Instance(module)})
+         .then(instance => {   
+            console.log(instance); 
+            let buffer = new Uint8Array(instance.exports.memory.buffer); 
+            let test = instance.exports._Z7c_hellov(); 
+            let mytext = ""; 
+            for (let i=test; buffer[i]; i++) {
+               mytext += String.fromCharCode(buffer[i]);
+            }
+            console.log(mytext); document.getElementById("textcontent").innerHTML = mytext; 
+         });
+      </script>
    </body>
 </html>
