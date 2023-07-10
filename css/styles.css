@@ -8,7 +8,7 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height:8vh;
+	min-height:44px;
 	background-color: lightgrey;
 	font-family: Helvetica, sans-serif;	
 }
