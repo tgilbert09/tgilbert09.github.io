@@ -2,6 +2,11 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	
+}
+
+body{
+	 background-color: #191919;
 }
 
 nav{
@@ -9,12 +14,12 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	min-height:44px;
-	background-color: lightgrey;
+	background-color: black;
 	font-family: Helvetica, sans-serif;	
 }
 
 .logo{
-	color: black;
+    color:white;
 	font-size: 30px;
 }
 
@@ -29,7 +34,7 @@ nav{
 }
 
 .nav-links a{
-	color: black;
+	color: white;
 	font-size: 23px;
 	text-decoration: none;
 }
@@ -41,14 +46,12 @@ nav{
 .burger div{
 	width: 25px;
 	height: 3px;
-	background-color: black;
+	background-color: white;
 	margin: 5px;
 	
 }
 
-body {
-  background-color: white;
-}
+
 
 h1 {
   color: white;
@@ -63,7 +66,7 @@ p {
 
 
 .test {
-	background-color: black;
+
 	color: white;
 }
 
